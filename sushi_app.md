@@ -48,7 +48,8 @@ put initial menu JSON data into data folder under public directory
   
 
   
-
+* On Item Detail load, background image takes a half second to load. Doesn't happen
+  in finished app.
   
 
 
