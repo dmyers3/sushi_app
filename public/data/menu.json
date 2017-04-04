@@ -1,0 +1,287 @@
+[
+  {
+    "name": "Sashimi Salad",
+    "price": 12.00,
+    "description": "Organic greens topped with fresh sashimi, wasabi soy vinaigrette.",
+    "nutrition": {
+      "protein": 2.9156,
+      "fat": 2.4396,
+      "carbohydrate": 3.8071,
+      "kilojoules": 17.5775,
+      "kilocalories": 4.2011,
+      "sugar": 0.3738
+    },
+    "img_src": "images/sashimi-salad.jpg",
+    "id": 1
+  },
+  {
+    "name": "Chirashi sushi",
+    "price": 21.00,
+    "description": "Sushi bar variety with sushi rice.",
+    "nutrition": {
+      "protein": 2.3138,
+      "fat": 0.6041,
+      "carbohydrate": 7.8006,
+      "kilojoules": 7.5314,
+      "kilocalories": 1.8000,
+      "sugar": 0.3114
+    },
+    "img_src": "images/chirashi-sushi.jpg",
+    "id": 2
+  },
+  {
+    "name": "Seaweed Salad",
+    "price": 17.00,
+    "description": "A nice seaweed salad.",
+    "nutrition": {
+      "protein": 0.229,
+      "fat": 2.2852,
+      "carbohydrate": 4.8824,
+      "kilojoules": 5.1003,
+      "kilocalories": 1.2190,
+      "sugar": 0.0037
+    },
+    "img_src": "images/seaweed-salad.jpg",
+    "id": 3
+  },
+  {
+    "name": "Edamame",
+    "price": 4.00,
+    "description": "Boiled soy beans with salt.",
+    "nutrition": {
+      "protein": 0.7436,
+      "fat": 1.9771,
+      "carbohydrate": 0.674,
+      "kilojoules": 17.294,
+      "kilocalories": 4.1334,
+      "sugar": 0.1028
+    },
+    "img_src": "images/edamame.jpg",
+    "id": 4
+  },
+  {
+    "name": "Miso soup",
+    "price": 4.00,
+    "description": "Soy bean soup with Wacame seaweed, tofu, and spring onion.",
+    "nutrition": {
+      "protein": 2.7642,
+      "fat": 2.1552,
+      "carbohydrate": 9.5294,
+      "kilojoules": 9.393,
+      "kilocalories": 2.2450,
+      "sugar": 0.1399
+    },
+    "img_src": "images/miso-soup.jpg",
+    "id": 5
+  },
+  {
+    "name": "Maguro",
+    "price": 12.50,
+    "description": "Tuna pieces.",
+    "nutrition": {
+      "protein": 2.2293,
+      "fat": 0.7329,
+      "carbohydrate": 0.0618,
+      "kilojoules": 28.2176,
+      "kilocalories": 6.7442,
+      "sugar": 0.4018
+    },
+    "img_src": "images/maguro.jpg",
+    "id": 6
+  },
+  {
+    "name": "Shake",
+    "price": 10.00,
+    "description": "",
+    "nutrition": {
+      "protein": 1.4804,
+      "fat": 1.4739,
+      "carbohydrate": 0.2237,
+      "kilojoules": 16.9406,
+      "kilocalories": 4.0489,
+      "sugar": 0.245
+    },
+    "img_src": "images/shake.jpg",
+    "id": 7
+  },
+  {
+    "name": "Shiromi",
+    "price": 9.50,
+    "description": "White fish pieces.",
+    "nutrition": {
+      "protein": 0.2814,
+      "fat": 1.3963,
+      "carbohydrate": 1.5973,
+      "kilojoules": 16.4487,
+      "kilocalories": 3.9313,
+      "sugar": 0.0509
+    },
+    "img_src": "images/shiromi.jpg",
+    "id": 8
+  },
+  {
+    "name": "Tekka maki",
+    "price": 6.00,
+    "description": "Tuna roll with wasabi. - 6 pieces.",
+    "nutrition": {
+      "protein": 0.9559,
+      "fat": 1.6395,
+      "carbohydrate": 7.4319,
+      "kilojoules": 9.7847,
+      "kilocalories": 2.3386,
+      "sugar": 0.4771
+    },
+    "img_src": "images/tekka-maki.jpg",
+    "id": 9
+  },
+  {
+    "name": "Hosomaki Mix",
+    "price": 17.00,
+    "description": "18 pieces.",
+    "nutrition": {
+      "protein": 2.683,
+      "fat": 2.858,
+      "carbohydrate": 1.6309,
+      "kilojoules": 23.8901,
+      "kilocalories": 5.7099,
+      "sugar": 0.4839
+    },
+    "img_src": "images/hosomaki-mix.jpg",
+    "id": 10
+  },
+  {
+    "name": "California rolls",
+    "price": 7.75,
+    "description": "Crab sticks, avocado and cucumber. - 8 pieces.",
+    "nutrition": {
+      "protein": 0.848,
+      "fat": 0.1205,
+      "carbohydrate": 3.6646,
+      "kilojoules": 18.6541,
+      "kilocalories": 4.4584,
+      "sugar": 0.0174
+    },
+    "img_src": "images/california-rolls.jpg",
+    "id": 11
+  },
+  {
+    "name": "Seattle rolls",
+    "price": 8.00,
+    "description": "Smoked salmon. Cucumber. Cream cheese.",
+    "nutrition": {
+      "protein": 2.2802,
+      "fat": 2.309,
+      "carbohydrate": 9.5136,
+      "kilojoules": 18.6961,
+      "kilocalories": 4.4685,
+      "sugar": 0.2533
+    },
+    "img_src": "images/seattle-rolls.jpg",
+    "id": 12
+  },
+  {
+    "name": "Spicy Tuna rolls",
+    "price": 6.00,
+    "description": "Spicy tuna, spring onion and avocado. - 6 pieces.",
+    "nutrition": {
+      "protein": 1.0003,
+      "fat": 1.5621,
+      "carbohydrate": 2.6322,
+      "kilojoules": 25.0911,
+      "kilocalories": 5.9969,
+      "sugar": 0.0474
+    },
+    "img_src": "images/spicytuna-rolls.jpg",
+    "id": 13
+  },
+  {
+    "name": "Ebi rolls",
+    "price": 8.00,
+    "description": "King prawns, avocado and asparagus. - 8 pieces.",
+    "nutrition": {
+      "protein": 2.826,
+      "fat": 2.854,
+      "carbohydrate": 2.433,
+      "kilojoules": 19.2756,
+      "kilocalories": 4.6070,
+      "sugar": 0.439
+    },
+    "img_src": "images/ebi-rolls.jpg",
+    "id": 14
+  },
+  {
+    "name": "Chicken Teriyaki",
+    "price": 12.00,
+    "description": "Sauted chicken with teiyaki sauce.",
+    "nutrition": {
+      "protein": 2.2375,
+      "fat": 2.6376,
+      "carbohydrate": 7.4605,
+      "kilojoules": 18.7052,
+      "kilocalories": 4.4707,
+      "sugar": 0.4271
+    },
+    "img_src": "images/chicken-teriyaki.jpg",
+    "id": 15
+  },
+  {
+    "name": "Salmon Teriyaki",
+    "price": 13.50,
+    "description": "Sauted salmon with teiyaki sauce.",
+    "nutrition": {
+      "protein": 2.5748,
+      "fat": 0.0234,
+      "carbohydrate": 6.5532,
+      "kilojoules": 22.7136,
+      "kilocalories": 5.4287,
+      "sugar": 0.1158
+    },
+    "img_src": "images/salmon-teriyaki.jpg",
+    "id": 16
+  },
+  {
+    "name": "Gohan",
+    "price": 3.00,
+    "description": "Steamed rice.",
+    "nutrition": {
+      "protein": 2.4622,
+      "fat": 2.672,
+      "carbohydrate": 9.7993,
+      "kilojoules": 25.1129,
+      "kilocalories": 6.0021,
+      "sugar": 0.3426
+    },
+    "img_src": "images/gohan.jpg",
+    "id": 17
+  },
+  {
+    "name": "Tori Katsu",
+    "price": 11.00,
+    "description": "Pan-fried chicken breast with yasai salad.",
+    "nutrition": {
+      "protein": 1.0267,
+      "fat": 2.2143,
+      "carbohydrate": 6.1597,
+      "kilojoules": 17.8688,
+      "kilocalories": 4.2708,
+      "sugar": 0.0161
+    },
+    "img_src": "images/tori-katsu.jpg",
+    "id": 18
+  },
+  {
+    "name": "Yaki Udon",
+    "price": 11.50,
+    "description": "Udon noddles with chicken, king prawns and vegetables.",
+    "nutrition": {
+      "protein": 1.7697,
+      "fat": 0.2534,
+      "carbohydrate": 6.9919,
+      "kilojoules": 7.508,
+      "kilocalories": 1.7945,
+      "sugar": 0.1798
+    },
+    "img_src": "images/yaki-udon.jpg",
+    "id": 19
+  }
+]
