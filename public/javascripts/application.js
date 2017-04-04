@@ -10,7 +10,9 @@ var App = {
   fetchMenuItems: function() {
     var self = this;
     this.menu = new Menu();
-    this.menuView = new MenuView({ collection: this.menu });
+    this.menuView = new MenuView({ 
+      collection: this.menu
+    });
     this.menu.fetch({
       success: function() {
         self.menuView.render();
@@ -29,6 +31,7 @@ var App = {
   },
   closeItemView: function() {
     this.menuView.render();
+    this.itemView.remove();
   }
 };
 

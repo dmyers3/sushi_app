@@ -1,8 +1,10 @@
 var ItemView = Backbone.View.extend({
+  id: 'item_details',
   template: Handlebars.compile($("[data-name=item_details]").html()),
   // Need to define what item is below
   render: function() {
     this.$el.html(this.template(this.model.toJSON()))
+    $('#content').html(this.$el);
   },
   events: {
     "click a.close": "close",
@@ -21,17 +23,24 @@ var ItemView = Backbone.View.extend({
     e.preventDefault();
     var currentId = this.currentId();
     var prevId = currentId > 1 ? currentId - 1 : this.model.collection.length;
-    console.log(prevId);
+    this.updateModel(prevId);
   },
   nextItem: function(e) {
     e.preventDefault();
     var currentId = this.currentId();
+    var nextId = currentId === this.model.collection.length ? 1 : currentId + 1;
+    this.updateModel(nextId);
+  },
+  updateModel: function(newId) {
+    var newModel = this.model.collection.findWhere({id: newId});
+    this.model = newModel;
+    this.render();
+    this.delegateEvents();
   },
   currentId: function() {
     return this.model.get('id');
   },
   initialize: function() {
-    this.setElement('#content');
     this.render();
   }
 })
