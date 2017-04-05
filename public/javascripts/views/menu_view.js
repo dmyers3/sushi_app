@@ -21,7 +21,6 @@ var MenuView = Backbone.View.extend({
   },
   clickedItem: function(e) {
     var clickedItemId = parseInt($(e.target).closest('li').attr('data-id'));
-    console.log(clickedItemId);
     return this.collection.findWhere({id: clickedItemId});
   },
 });

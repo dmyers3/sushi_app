@@ -4,18 +4,26 @@ var CartView = Backbone.View.extend({
   render: function() {
     this.$el.html(this.template({ 
       items: this.collection.toJSON(),
-      total_price: this.cartTotal()
+      total_price: this.collection.total()
     }));
   },
-  cartTotal: function() {
-    var cartItems = this.collection.toJSON();
-    return cartItems.reduce(function(acc, item) {
-      return acc + item.price * item.quantity;
-    }, 0);
+  events: {
+    "click a.empty_cart": "emptyCart",
+    "click a.checkout": "checkout",
+  },
+  emptyCart: function(e) {
+    e.preventDefault();
+    this.collection.reset();
+    $('#cart').slideUp();
+  },
+  checkout: function(e) {
+    e.preventDefault();
+    this.trigger("checkout");
   },
   initialize: function() {
     this.listenTo(this.collection, 'update', this.render);
     this.listenTo(this.collection, 'change', this.render);
+    this.listenTo(this.collection, 'reset', this.render);
   },
 });
 

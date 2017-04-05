@@ -10,12 +10,7 @@
     <header>
       <a class="logo" href="/"><img src="images/logo.png" alt="logo"></a>
       <div class="cart">
-        <a href="/">
-          <span class="left">Shopping Cart</span><span class="right"><!--
-          --><span class="count">1</span>
-            item
-          </span>
-        </a>
+        
       </div>
     </header>
     <main>
@@ -27,6 +22,15 @@
     </main>
     <footer>
     </footer>
+    
+    <script data-name="cart_header" type="text/x-handlebars">
+      <a href="/">
+        <span class="left">Shopping Cart</span><span class="right"><!--
+        --><span class="count">{{num_items}}</span>
+          item
+        </span>
+      </a>
+    </script>
     
     <script data-name="cart" type="text/x-handlebars">
       
@@ -126,12 +130,59 @@
       </div>
     </script>
     
+    <script data-name="checkout" type="text/x-handlebars">
+      <div id="checkout">
+        <div class="img_top"></div>
+        <section>
+          <h1>Order Details</h1>
+          <table>
+            <thead>
+              <tr>
+                <th>Item</th>
+                <th></th>
+                <th>Quantity</th>
+                <th>Price</th>
+              </tr>
+            </thead>
+            <tbody>
+              {{#each items}}
+                <tr data-id="{{id}}">
+                  <td><img src="{{img_src}}" alt="cart-item"></td>
+                  <td>{{name}}</td>
+                  <td>
+                    <span class="quantity_modifier">
+                      <i class="fa fa-minus" aria-hidden="true"></i>
+                    </span>
+                    <p>{{quantity}}</p>
+                    <span class="quantity_modifier">
+                      <i class="fa fa-plus" aria-hidden="true"></i>
+                    </span>
+                  </td>
+                  <td>${{format_price price}}</td>
+                </tr>
+              {{/each}}
+            </tbody>
+          </table>
+          <p>Total: <span class="total">${{format_price total_price}}</span></p>
+          <footer>
+            <a href="/">Cancel order</a>
+            <form action="/" method="post">
+              <input type="submit" value="ORDER NOW!">
+            </form>
+          </footer>
+        </section>
+        <div class="img_bottom"></div>
+      </div>
+    </script>
+    
     <script src="javascripts/models/menu_item.js"></script>
     <script src="javascripts/collections/menu.js"></script>
     <script src="javascripts/collections/cart.js"></script>
     <script src="javascripts/views/menu_view.js"></script>
     <script src="javascripts/views/item.js"></script>
     <script src="javascripts/views/cart_view.js"></script>
+    <script src="javascripts/views/cart_header.js"></script>
+    <script src="javascripts/views/checkout.js"></script>
     <script src="javascripts/application.js"></script>
   </body>
 </html>

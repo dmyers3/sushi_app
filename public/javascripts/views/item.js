@@ -24,15 +24,15 @@ var ItemView = Backbone.View.extend({
     e.preventDefault();
     var currentId = this.currentId();
     var prevId = currentId > 1 ? currentId - 1 : this.model.collection.length;
-    this.updateModel(prevId);
+    this.updateModelInView(prevId);
   },
   nextItem: function(e) {
     e.preventDefault();
     var currentId = this.currentId();
     var nextId = currentId === this.model.collection.length ? 1 : currentId + 1;
-    this.updateModel(nextId);
+    this.updateModelInView(nextId);
   },
-  updateModel: function(newId) {
+  updateModelInView: function(newId) {
     var newModel = this.model.collection.findWhere({id: newId});
     this.model = newModel;
     this.render();

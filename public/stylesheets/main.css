@@ -99,6 +99,7 @@ main ul li {
   overflow: hidden;
   background: #000;
   color: #fff;
+  display: none;
 }
 #cart ul {
   float: left;
