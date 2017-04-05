@@ -50,6 +50,13 @@ put initial menu JSON data into data folder under public directory
   
 * On Item Detail load, background image takes a half second to load. Doesn't happen
   in finished app.
+
+cart
+  copy of menuItem
+    add quantity to it
+
+to render go over each menuItem
+also need cart Total
   
 
 

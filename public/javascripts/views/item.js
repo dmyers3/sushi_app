@@ -16,8 +16,9 @@ var ItemView = Backbone.View.extend({
     e.preventDefault();
     this.trigger('close');
   },
-  addToCart: function() {
-    
+  addToCart: function(e) {
+    e.preventDefault;
+    this.trigger('addItem');
   },
   prevItem: function(e) {
     e.preventDefault();

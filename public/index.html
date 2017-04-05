@@ -20,29 +20,36 @@
     </header>
     <main>
       <div id="cart">
-        <ul>
-          <li data-id="1">
-            <figure>
-              <img src="images/sashimi-salad.jpg" alt="cart-item">
-            </figure>
-            <p>2 x $12.00</p>
-          </li>
-        </ul>
-        <section>
-          <h3>Your<br>shopping cart</h3>
-          <p class="total">$24.00</p>
-          <p></p>
-          <footer>
-            <a class="left empty_cart" href="#">Empty cart</a><!--
-            --><a class="right checkout" href="/checkout">Checkout</a>
-          </footer>
-        </section>
+        
       </div>
       <div id="content">
       </div>
     </main>
     <footer>
     </footer>
+    
+    <script data-name="cart" type="text/x-handlebars">
+      
+      <ul>
+        {{#each items}}
+          <li data-id="{{id}}">
+            <figure>
+              <img src="{{img_src}}" alt="cart-item">
+            </figure>
+            <p>{{quantity}} x ${{format_price price}}</p>
+          </li>
+        {{/each}}
+      </ul>
+      <section>
+        <h3>Your<br>shopping cart</h3>
+        <p class="total">${{format_price total_price}}</p>
+        <p></p>
+        <footer>
+          <a class="left empty_cart" href="#">Empty cart</a><!--
+          --><a class="right checkout" href="/checkout">Checkout</a>
+        </footer>
+      </section>
+    </script>
     
     <script data-name="menu" type="text/x-handlebars">
       {{#each menu}}  
@@ -121,8 +128,10 @@
     
     <script src="javascripts/models/menu_item.js"></script>
     <script src="javascripts/collections/menu.js"></script>
+    <script src="javascripts/collections/cart.js"></script>
     <script src="javascripts/views/menu_view.js"></script>
     <script src="javascripts/views/item.js"></script>
+    <script src="javascripts/views/cart_view.js"></script>
     <script src="javascripts/application.js"></script>
   </body>
 </html>

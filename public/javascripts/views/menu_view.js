@@ -13,14 +13,15 @@ var MenuView = Backbone.View.extend({
   },
   addToCart: function(e) {
     e.preventDefault();
-
+    this.trigger('addItem', this.clickedItem(e));
   },
   displayItemDetails: function(e) {
     e.preventDefault();
-    var itemId = $(e.target).closest('li').attr('data-id');
-    this.trigger("item_details", itemId);
+    this.trigger('item_details', this.clickedItem(e));
   },
-  initialize: function() {
-  
+  clickedItem: function(e) {
+    var clickedItemId = parseInt($(e.target).closest('li').attr('data-id'));
+    console.log(clickedItemId);
+    return this.collection.findWhere({id: clickedItemId});
   },
 });
