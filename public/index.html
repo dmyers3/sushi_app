@@ -33,7 +33,6 @@
     </script>
     
     <script data-name="cart" type="text/x-handlebars">
-      
       <ul>
         {{#each items}}
           <li data-id="{{id}}">
@@ -165,7 +164,7 @@
           </table>
           <p>Total: <span class="total">${{format_price total_price}}</span></p>
           <footer>
-            <a href="/">Cancel order</a>
+            <a class="cancel" href="/">Cancel order</a>
             <form action="/" method="post">
               <input type="submit" value="ORDER NOW!">
             </form>
