@@ -11,7 +11,7 @@
       "kilocalories": 4.2011,
       "sugar": 0.3738
     },
-    "img_src": "images/sashimi-salad.jpg",
+    "img_src": "/images/sashimi-salad.jpg",
     "id": 1
   },
   {
@@ -26,7 +26,7 @@
       "kilocalories": 1.8000,
       "sugar": 0.3114
     },
-    "img_src": "images/chirashi-sushi.jpg",
+    "img_src": "/images/chirashi-sushi.jpg",
     "id": 2
   },
   {
@@ -41,7 +41,7 @@
       "kilocalories": 1.2190,
       "sugar": 0.0037
     },
-    "img_src": "images/seaweed-salad.jpg",
+    "img_src": "/images/seaweed-salad.jpg",
     "id": 3
   },
   {
@@ -56,7 +56,7 @@
       "kilocalories": 4.1334,
       "sugar": 0.1028
     },
-    "img_src": "images/edamame.jpg",
+    "img_src": "/images/edamame.jpg",
     "id": 4
   },
   {
@@ -71,7 +71,7 @@
       "kilocalories": 2.2450,
       "sugar": 0.1399
     },
-    "img_src": "images/miso-soup.jpg",
+    "img_src": "/images/miso-soup.jpg",
     "id": 5
   },
   {
@@ -86,7 +86,7 @@
       "kilocalories": 6.7442,
       "sugar": 0.4018
     },
-    "img_src": "images/maguro.jpg",
+    "img_src": "/images/maguro.jpg",
     "id": 6
   },
   {
@@ -101,7 +101,7 @@
       "kilocalories": 4.0489,
       "sugar": 0.245
     },
-    "img_src": "images/shake.jpg",
+    "img_src": "/images/shake.jpg",
     "id": 7
   },
   {
@@ -116,7 +116,7 @@
       "kilocalories": 3.9313,
       "sugar": 0.0509
     },
-    "img_src": "images/shiromi.jpg",
+    "img_src": "/images/shiromi.jpg",
     "id": 8
   },
   {
@@ -131,7 +131,7 @@
       "kilocalories": 2.3386,
       "sugar": 0.4771
     },
-    "img_src": "images/tekka-maki.jpg",
+    "img_src": "/images/tekka-maki.jpg",
     "id": 9
   },
   {
@@ -146,7 +146,7 @@
       "kilocalories": 5.7099,
       "sugar": 0.4839
     },
-    "img_src": "images/hosomaki-mix.jpg",
+    "img_src": "/images/hosomaki-mix.jpg",
     "id": 10
   },
   {
@@ -161,7 +161,7 @@
       "kilocalories": 4.4584,
       "sugar": 0.0174
     },
-    "img_src": "images/california-rolls.jpg",
+    "img_src": "/images/california-rolls.jpg",
     "id": 11
   },
   {
@@ -176,7 +176,7 @@
       "kilocalories": 4.4685,
       "sugar": 0.2533
     },
-    "img_src": "images/seattle-rolls.jpg",
+    "img_src": "/images/seattle-rolls.jpg",
     "id": 12
   },
   {
@@ -191,7 +191,7 @@
       "kilocalories": 5.9969,
       "sugar": 0.0474
     },
-    "img_src": "images/spicytuna-rolls.jpg",
+    "img_src": "/images/spicytuna-rolls.jpg",
     "id": 13
   },
   {
@@ -206,7 +206,7 @@
       "kilocalories": 4.6070,
       "sugar": 0.439
     },
-    "img_src": "images/ebi-rolls.jpg",
+    "img_src": "/images/ebi-rolls.jpg",
     "id": 14
   },
   {
@@ -221,7 +221,7 @@
       "kilocalories": 4.4707,
       "sugar": 0.4271
     },
-    "img_src": "images/chicken-teriyaki.jpg",
+    "img_src": "/images/chicken-teriyaki.jpg",
     "id": 15
   },
   {
@@ -236,7 +236,7 @@
       "kilocalories": 5.4287,
       "sugar": 0.1158
     },
-    "img_src": "images/salmon-teriyaki.jpg",
+    "img_src": "/images/salmon-teriyaki.jpg",
     "id": 16
   },
   {
@@ -251,7 +251,7 @@
       "kilocalories": 6.0021,
       "sugar": 0.3426
     },
-    "img_src": "images/gohan.jpg",
+    "img_src": "/images/gohan.jpg",
     "id": 17
   },
   {
@@ -266,7 +266,7 @@
       "kilocalories": 4.2708,
       "sugar": 0.0161
     },
-    "img_src": "images/tori-katsu.jpg",
+    "img_src": "/images/tori-katsu.jpg",
     "id": 18
   },
   {
@@ -281,7 +281,7 @@
       "kilocalories": 1.7945,
       "sugar": 0.1798
     },
-    "img_src": "images/yaki-udon.jpg",
+    "img_src": "/images/yaki-udon.jpg",
     "id": 19
   }
 ]

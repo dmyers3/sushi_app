@@ -8,7 +8,7 @@ var ItemView = Backbone.View.extend({
   },
   events: {
     "click a.close": "close",
-    "click a.add_cart": "addToCart",
+    "click a.add_cart.item": "addToCart",
     "click div.prev": "prevItem",
     "click div.next": "nextItem"
   },
@@ -17,7 +17,7 @@ var ItemView = Backbone.View.extend({
     this.trigger('close');
   },
   addToCart: function(e) {
-    e.preventDefault;
+    e.preventDefault();
     this.trigger('addItem');
   },
   prevItem: function(e) {
@@ -36,6 +36,7 @@ var ItemView = Backbone.View.extend({
     var newModel = this.model.collection.findWhere({id: newId});
     this.model = newModel;
     this.render();
+    router.navigate('menu/' + newId );
     this.delegateEvents();
   },
   currentId: function() {

@@ -57,7 +57,15 @@ cart
 
 to render go over each menuItem
 also need cart Total
+
+
+click on itemDetails header - route goes to /menu/:itemId
+  when its exited it goes back to index
   
+
+
+
+
 
 
 

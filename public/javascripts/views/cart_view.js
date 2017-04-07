@@ -30,6 +30,9 @@ var CartView = Backbone.View.extend({
     this.listenTo(this.collection, 'reset', this.render);
   },
   initialize: function() {
+    if (this.collection.length) {
+      this.render();
+    }
     this.bindEvents();
   },
   hide: function() {

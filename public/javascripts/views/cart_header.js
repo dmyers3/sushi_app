@@ -1,9 +1,15 @@
 var CartHeaderView = Backbone.View.extend({
   el: '.cart',
-  template: Handlebars.compile($("[data-name=cart_header]").html()), 
+  template: Handlebars.compile($("[data-name=cart_header]").html()),
+  events: {
+    "click a.cart_header": "stopDefault"
+  },
   render: function() {
     this.$el.html(this.template({num_items: this.collection.numItems()}));
-    // this.$el.html({num_items: 10});
+    this.delegateEvents();
+  },
+  stopDefault: function(e) {
+    e.preventDefault();
   },
   initialize: function() {
     this.render();

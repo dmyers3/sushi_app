@@ -24,7 +24,7 @@
     </footer>
     
     <script data-name="cart_header" type="text/x-handlebars">
-      <a href="/">
+      <a class="cart_header" href="/">
         <span class="left">Shopping Cart</span><span class="right"><!--
         --><span class="count">{{num_items}}</span>
           item
@@ -76,7 +76,7 @@
     <script data-name="item_details" type="text/x-handlebars">
       <div>
         <div class="nav prev">
-          <img src="images/nav-prev.png" alt="prev">
+          <img src="/images/nav-prev.png" alt="prev">
         </div>
         <figure>
           <img src="{{img_src}}" alt="selected-item">
@@ -87,7 +87,7 @@
           <p>{{description}}</p>
           <footer>
             <h2>${{format_price price}}</h2>
-            <a class="add_cart" href="#">Add to cart</a>
+            <a class="add_cart item" href="#">Add to cart</a>
           </footer>
         </article>
         <aside>
@@ -124,7 +124,7 @@
           {{/with}}
         </aside>
         <div class="nav next">
-          <img src="images/nav-next.png" alt="next">
+          <img src="/images/nav-next.png" alt="next">
         </div>
       </div>
     </script>
@@ -183,5 +183,6 @@
     <script src="javascripts/views/cart_header.js"></script>
     <script src="javascripts/views/checkout.js"></script>
     <script src="javascripts/application.js"></script>
+    <script src="javascripts/router.js"></script>
   </body>
 </html>
