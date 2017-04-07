@@ -36,7 +36,7 @@ var ItemView = Backbone.View.extend({
     var newModel = this.model.collection.findWhere({id: newId});
     this.model = newModel;
     this.render();
-    router.navigate('menu/' + newId );
+    router.navigate('menu/' + newId);
     this.delegateEvents();
   },
   currentId: function() {
@@ -44,5 +44,6 @@ var ItemView = Backbone.View.extend({
   },
   initialize: function() {
     this.render();
+    
   }
 })

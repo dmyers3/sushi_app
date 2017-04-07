@@ -4,8 +4,6 @@ var router = new (Backbone.Router.extend({
     "menu": "menu",
     "menu/:id": "itemDetail",
     "checkout": "checkout"
-  //   "/menu/:itemId": App.itemView,
-  //   "/checkout": App.checkout
   //   // can't use "/" for index route because routes already assumes "/". also need
   //   // to account for instances where there is no ending forward slash (because index
   //   // can have slash or no slash)

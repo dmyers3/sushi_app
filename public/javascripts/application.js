@@ -54,7 +54,7 @@ var App = {
     this.itemView = new ItemView({ model: menuItem });
     this.listenTo(this.itemView, "close", this.closeItemView);
     this.listenTo(this.itemView, "addItem", this.addItem);
-    router.navigate('menu/' + menuItem.get('id') + '/');
+    router.navigate('menu/' + menuItem.get('id'));
   },
   closeItemView: function() {
     this.menuView.render();
